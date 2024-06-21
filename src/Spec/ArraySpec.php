@@ -6,10 +6,7 @@ namespace App\Spec;
 
 use App\TemplateParserException;
 use App\Spec;
-use Tests\Spec\ArraySpecTest;
-use Tests\Tested;
 
-#[Tested(ArraySpecTest::class)]
 class ArraySpec extends Spec
 {
     private const string SYMBOL = 'a';

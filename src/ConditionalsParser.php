@@ -37,9 +37,7 @@ class ConditionalsParser
             }
 
             if ($char === Placeholder::SYMBOL) {
-                var_dump($argsIndex, $charIndex, $char, $query);
-
-                if ($openBracketPosition !== null) {
+                 if ($openBracketPosition !== null) {
                     if (!array_key_exists($argsIndex, $args)) {
                         throw new TemplateParserException('parameter data in conditional is missing');
                     }
